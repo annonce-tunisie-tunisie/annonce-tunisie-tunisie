@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annonce Tunisie Tunisie - Vente de Biens Immobiliers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E53E3E',
+                        secondary: '#1A202C',
+                        accent: '#F56565'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .property-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(229, 62, 62, 0.9) 0%, rgba(26, 32, 44, 0.9) 100%);
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #E53E3E;
+            transition: width .3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-secondary text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+    <a href="#">
+        <img src="./logo.jpg" alt="RedBrick Elite" class="h-20 w-auto">
+    </a>
+</div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="nav-link px-3 py-2">Accueil</a>
+                    <a href="#b" class="nav-link px-3 py-2">Nos Biens</a>
+                    <a href="#pour" class="nav-link px-3 py-2">A propos</a>
+                    <a href="#con" class="nav-link px-3 py-2">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <i data-feather="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Votre Propriété de Rêve Vous Attend</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Découvrez des terrains et villas exclusifs à Hammamet</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#b" class="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                    Explorer les biens
+                </a>
+                <a href="#con" class="bg-white hover:bg-gray-100 text-secondary font-bold py-3 px-8 rounded-full transition duration-300">
+                    Contactez-nous
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Featured Properties -->
+    <section class="py-16 bg-gray-50" id="b">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Biens en Vedette</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Property 1 -->
+                <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+    <div class="relative">
+        <img src="./terrain500-barreka.jpg" alt="Terrain Barraket Sahel Hammamet" class="w-full h-64 object-cover">
+        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+            À vendre
+        </div>
+        <div class="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+            <i data-feather="map-pin" class="inline mr-1"></i> Hammamet
+        </div>
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-bold text-secondary mb-2">Terrain 512 m²</h3>
+        <p class="text-gray-600 mb-4">Barraket Sahel, Hammamet | 512 m²</p>
+        <div class="flex justify-between items-center">
+            <span class="text-primary text-xl font-bold">Prix à définir</span>
+            <a href="https://www.facebook.com/share/r/1H3h6UNULv/" target="_blank" class="text-secondary hover:text-primary flex items-center">
+                Voir détails <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+                <!-- Property 2 -->
+                
+
+                <!-- Property 3 -->
+                
+
+            
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-secondary text-white" id="pour">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Pourquoi Nous Choisir ?</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg text-center">
+                    <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="shield" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Confiance et Sécurité</h3>
+                    <p class="text-gray-300">Transactions sécurisées et documents légaux vérifiés pour une acquisition en toute sérénité.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg text-center">
+                    <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="compass" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Meilleurs Emplacements</h3>
+                    <p class="text-gray-300">Accès exclusif aux propriétés les plus recherchées dans les quartiers les plus prisés.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg text-center">
+                    <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="award" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expertise Professionnelle</h3>
+                    <p class="text-gray-300">Notre équipe d'experts vous accompagne à chaque étape de votre projet immobilier.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Témoignages</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/1" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-secondary">Famille Ben Youssef</h4>
+                            <p class="text-gray-500 text-sm">Acheteur de Villa</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Nous cherchions depuis longtemps un terrain bien situé à Hammamet. Grâce à Annonce Tunisie Tunisie, nous avons trouvé un terrain à Barraket Sahel parfaitement adapté à notre projet de maison familiale. La transaction a été rapide et transparente."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/2" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-secondary">Aymen B</h4>
+                            <p class="text-gray-500 text-sm">Acheteur de Terrain</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"J’ai acheté un terrain de 330 m² à proximité de Hammamet. Les conseils reçus via Annonce Tunisie Tunisie m’ont permis de sécuriser un bon investissement. Service professionnel, équipe réactive et à l’écoute."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/3" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-secondary">Syrine & Mehdi</h4>
+                            <p class="text-gray-500 text-sm">Acheteur de Terrain</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Nous voulions construire notre première maison. Nous avons trouvé un terrain viabilisé, bien placé et à un prix compétitif. Merci à Annonce Tunisie Tunisie pour l’accompagnement, tout a été clair du début à la fin."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 hero-gradient" id="con">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Prêt à Trouver Votre Propriété Idéale ?</h2>
+            <p class="text-xl text-white mb-8 max-w-2xl mx-auto">Notre équipe est à votre disposition pour vous guider dans votre projet immobilier.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="bg-white hover:bg-gray-100 text-secondary font-bold py-3 px-8 rounded-full transition duration-300">
+                    <i data-feather="phone" class="inline mr-2"></i> Nous contacter
+                </a>
+                <a href="#" class="bg-transparent hover:bg-white hover:text-secondary border-2 border-white text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                    <i data-feather="mail" class="inline mr-2"></i> Nous écrire
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i data-feather="home" class="text-primary mr-2"></i> Annonce<span class="text-primary">Tunisie Tunisie</span>
+                    </h3>
+                    <p class="text-gray-400">Leader dans la vente de terrains et villas à Hammamet</p>
+                    <div class="flex mt-4 space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        
+
+                        <a href="https://www.tiktok.com/@toncompte" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 448 512">
+        <path d="M448,209.9a210,210,0,0,1-122-39.1V349.4a162.55,162.55,0,1,1-136.6-160.3v81.3a81.49,81.49,0,1,0,56.4,77.6V0h80a129.88,129.88,0,0,0,122,79.4Z"/>
+    </svg>
+</a>
+
+                        
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Liens Rapides</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Accueil</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Nos biens</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">À propos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Nos Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Vente de Terrains</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Vente de Villas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Évaluation Immobilière</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Conseil en Investissement</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contactez-nous</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1 text-primary"></i>
+                            <span class="text-gray-400">Hammamet, Tunisie</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="phone" class="mr-2 mt-1 text-primary"></i>
+                            <span class="text-gray-400">+216 20 007 193</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+    <p>&copy; 2025 
+        <a href="https://www.mh-digital-solution.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+            MH Digital Solution
+        </a>. Tous droits réservés.
+    </p>
+</div>
+
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            // Implement mobile menu functionality here
+            alert('Menu mobile sera implémenté ici');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <!-- Bouton Scroll to Top -->
+<button id="scrollToTop" 
+    class="hidden fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-secondary transition">
+    ↑
+</button>
+
+<script>
+    // Récupération du bouton
+    const scrollBtn = document.getElementById("scrollToTop");
+
+    // Afficher ou cacher le bouton selon le scroll
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollBtn.classList.remove("hidden");
+        } else {
+            scrollBtn.classList.add("hidden");
+        }
+    });
+
+    // Scroll en haut en douceur
+    scrollBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+</body>
+</html>
