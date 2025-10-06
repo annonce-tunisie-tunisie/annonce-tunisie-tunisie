@@ -65,6 +65,13 @@
                 </div>
             </div>
         </div>
+        <!-- Menu mobile caché -->
+  <div class="mobile-menu hidden md:hidden bg-secondary px-6 pb-4">
+    <a href="#" class="block py-2">Accueil</a>
+    <a href="#b" class="block py-2">Nos Biens</a>
+    <a href="#pour" class="block py-2">A propos</a>
+    <a href="#con" class="block py-2">Contact</a>
+  </div>
     </nav>
 
     <!-- Hero Section -->
@@ -364,6 +371,16 @@
         });
     });
 </script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
 
+  const btn = document.querySelector('.mobile-menu-button');
+  const menu = document.querySelector('.mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
 </body>
 </html>
