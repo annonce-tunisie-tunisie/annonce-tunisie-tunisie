@@ -1,94 +1,104 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annonce Tunisie Tunisie - Vente de Biens Immobiliers</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#E53E3E',
-                        secondary: '#1A202C',
-                        accent: '#F56565'
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annonce Tunisie Tunisie - Vente de Biens Immobiliers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#E53E3E',
+            secondary: '#1A202C',
+            accent: '#F56565'
+          }
         }
-    </script>
-    <style>
-        .property-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(229, 62, 62, 0.9) 0%, rgba(26, 32, 44, 0.9) 100%);
-        }
-        .nav-link::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #E53E3E;
-            transition: width .3s;
-        }
-        .nav-link:hover::after {
-            width: 100%;
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    .property-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(229, 62, 62, 0.9) 0%, rgba(26, 32, 44, 0.9) 100%);
+    }
+    .nav-link::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #E53E3E;
+      transition: width .3s;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+  </style>
 </head>
+
 <body class="bg-gray-50 font-sans">
-    <!-- Navigation -->
-    <nav class="bg-secondary text-white shadow-lg">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-4">
-    <a href="#">
-        <img src="./logo.jpg" alt="RedBrick Elite" class="h-20 w-auto">
-    </a>
-</div>
-
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="nav-link px-3 py-2">Accueil</a>
-                    <a href="#b" class="nav-link px-3 py-2">Nos Biens</a>
-                    <a href="#pour" class="nav-link px-3 py-2">A propos</a>
-                    <a href="#con" class="nav-link px-3 py-2">Contact</a>
-                </div>
-                <div class="md:hidden">
-                    <button class="mobile-menu-button">
-                        <i data-feather="menu" class="w-6 h-6"></i>
-                    </button>
-                </div>
-            </div>
+  <!-- Navigation -->
+  <nav class="bg-secondary text-white shadow-lg">
+    <div class="container mx-auto px-6 py-3">
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-4">
+          <a href="#">
+            <img src="./logo.jpg" alt="RedBrick Elite" class="h-20 w-auto">
+          </a>
         </div>
-        <!-- Menu mobile caché -->
-  <div class="mobile-menu hidden md:hidden bg-secondary px-6 pb-4">
-    <a href="#" class="block py-2">Accueil</a>
-    <a href="#b" class="block py-2">Nos Biens</a>
-    <a href="#pour" class="block py-2">A propos</a>
-    <a href="#con" class="block py-2">Contact</a>
-  </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-gradient text-white py-20 md:py-32">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Votre Propriété de Rêve Vous Attend</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Découvrez des terrains et villas exclusifs à Hammamet</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#b" class="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
-                    Explorer les biens
-                </a>
-                <a href="#con" class="bg-white hover:bg-gray-100 text-secondary font-bold py-3 px-8 rounded-full transition duration-300">
-                    Contactez-nous
-                </a>
-            </div>
+        <!-- Menu desktop -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#" class="nav-link px-3 py-2">Accueil</a>
+          <a href="#b" class="nav-link px-3 py-2">Nos Biens</a>
+          <a href="#pour" class="nav-link px-3 py-2">A propos</a>
+          <a href="#con" class="nav-link px-3 py-2">Contact</a>
         </div>
-    </section>
+
+        <!-- Bouton hamburger -->
+        <div class="md:hidden">
+          <button class="mobile-menu-button focus:outline-none">
+            <i data-feather="menu" class="w-7 h-7"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu hidden md:hidden bg-secondary px-6 pb-4 transition-all duration-300 ease-in-out">
+      <a href="#" class="block py-2 border-b border-gray-700">Accueil</a>
+      <a href="#b" class="block py-2 border-b border-gray-700">Nos Biens</a>
+      <a href="#pour" class="block py-2 border-b border-gray-700">A propos</a>
+      <a href="#con" class="block py-2">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-gradient text-white py-20 md:py-32">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Votre Propriété de Rêve Vous Attend</h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+        Découvrez des terrains et villas exclusifs à Hammamet
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#b"
+          class="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+          Explorer les biens
+        </a>
+        <a href="#con"
+          class="bg-white hover:bg-gray-100 text-secondary font-bold py-3 px-8 rounded-full transition duration-300">
+          Contactez-nous
+        </a>
+      </div>
+    </div>
+  </section>
 
     
     <!-- Featured Properties -->
@@ -253,134 +263,127 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-secondary text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i data-feather="home" class="text-primary mr-2"></i> Annonce<span class="text-primary">Tunisie Tunisie</span>
-                    </h3>
-                    <p class="text-gray-400">Leader dans la vente de terrains et villas à Hammamet</p>
-                    <div class="flex mt-4 space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-primary">
-                            <i data-feather="facebook"></i>
-                        </a>
-                        
-
-                        <a href="https://www.tiktok.com/@toncompte" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-primary">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 448 512">
-        <path d="M448,209.9a210,210,0,0,1-122-39.1V349.4a162.55,162.55,0,1,1-136.6-160.3v81.3a81.49,81.49,0,1,0,56.4,77.6V0h80a129.88,129.88,0,0,0,122,79.4Z"/>
-    </svg>
-</a>
-
-                        
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Liens Rapides</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Accueil</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Nos biens</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">À propos</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Nos Services</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Vente de Terrains</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Vente de Villas</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Évaluation Immobilière</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Conseil en Investissement</a></li>
-                        
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contactez-nous</h4>
-                    <ul class="space-y-2">
-                        <li class="flex items-start">
-                            <i data-feather="map-pin" class="mr-2 mt-1 text-primary"></i>
-                            <span class="text-gray-400">Hammamet, Tunisie</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-feather="phone" class="mr-2 mt-1 text-primary"></i>
-                            <span class="text-gray-400">+216 20 007 193</span>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-    <p>&copy; 2025 
-        <a href="https://www.mh-digital-solution.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-            MH Digital Solution
-        </a>. Tous droits réservés.
-    </p>
-</div>
-
+  <footer class="bg-secondary text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4 flex items-center">
+            <i data-feather="home" class="text-primary mr-2"></i> Annonce<span class="text-primary">Tunisie Tunisie</span>
+          </h3>
+          <p class="text-gray-400">Leader dans la vente de terrains et villas à Hammamet</p>
+          <div class="flex mt-4 space-x-4">
+            <a href="#" class="text-gray-400 hover:text-primary">
+              <i data-feather="facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/@toncompte" target="_blank" rel="noopener noreferrer"
+              class="text-gray-400 hover:text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 448 512">
+                <path
+                  d="M448,209.9a210,210,0,0,1-122-39.1V349.4a162.55,162.55,0,1,1-136.6-160.3v81.3a81.49,81.49,0,1,0,56.4,77.6V0h80a129.88,129.88,0,0,0,122,79.4Z" />
+              </svg>
+            </a>
+          </div>
         </div>
-    </footer>
 
-    <script>
-        feather.replace();
-        
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            // Implement mobile menu functionality here
-            alert('Menu mobile sera implémenté ici');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-    <!-- Bouton Scroll to Top -->
-<button id="scrollToTop" 
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Liens Rapides</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Accueil</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Nos biens</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">À propos</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Nos Services</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Vente de Terrains</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Vente de Villas</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Évaluation Immobilière</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Conseil en Investissement</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contactez-nous</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i data-feather="map-pin" class="mr-2 mt-1 text-primary"></i>
+              <span class="text-gray-400">Hammamet, Tunisie</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="phone" class="mr-2 mt-1 text-primary"></i>
+              <span class="text-gray-400">+216 20 007 193</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <p>&copy; 2025
+          <a href="https://www.mh-digital-solution.com/" target="_blank" rel="noopener noreferrer"
+            class="text-primary hover:underline">
+            MH Digital Solution
+          </a>. Tous droits réservés.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top -->
+  <button id="scrollToTop"
     class="hidden fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-secondary transition">
     ↑
-</button>
+  </button>
 
-<script>
-    // Récupération du bouton
-    const scrollBtn = document.getElementById("scrollToTop");
+  <!-- Scripts -->
+  <script>
+    feather.replace();
 
-    // Afficher ou cacher le bouton selon le scroll
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 300) {
-            scrollBtn.classList.remove("hidden");
-        } else {
-            scrollBtn.classList.add("hidden");
+    // Menu mobile toggle
+    const menuBtn = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuIcon = menuBtn.querySelector('i');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('opacity-0');
+      mobileMenu.classList.toggle('opacity-100');
+      mobileMenu.classList.toggle('translate-y-[-10px]');
+
+      // Change l’icône du menu
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      menuIcon.dataset.feather = isOpen ? 'x' : 'menu';
+      feather.replace();
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          mobileMenu.classList.add('hidden'); // ferme le menu après clic
+          menuIcon.dataset.feather = 'menu';
+          feather.replace();
         }
+      });
     });
 
-    // Scroll en haut en douceur
+    // Scroll to top button
+    const scrollBtn = document.getElementById("scrollToTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollBtn.classList.remove("hidden");
+      } else {
+        scrollBtn.classList.add("hidden");
+      }
+    });
     scrollBtn.addEventListener("click", () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
-</script>
-<script src="https://unpkg.com/feather-icons"></script>
-<script>
-  feather.replace();
-
-  const btn = document.querySelector('.mobile-menu-button');
-  const menu = document.querySelector('.mobile-menu');
-
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>
+  </script>
 </body>
 </html>
